@@ -10,10 +10,73 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header>connected</header>
-    <main></main>
+    <header class="container mx-auto my-6">
+      <div class="flex justify-between text-center flex-col md:flex-row">
+        <div class="text-center">
+          <img src="./images/Logo.png" alt="" />
+        </div>
+        <div>
+          <button class="btn bg-[#25252533]">Filter</button>
+        </div>
+        <div>
+          <button class="btn">Blog</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <hr />
+      <section>
+        <div id="button-container" class="text-center">
+          <!-- buttons here -->
+        </div>
+      </section>
+      <section class="p-3">
+        <div id="drawing-container">
+          <div
+            id="card-container"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"
+          >
+            <!-- <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src="${news?.image_url}" />
+            </figure>
+            <div class="card-body">
+              <div class="card-footer flex justify-between mt-8">
+                <div class="flex">
+                  <div>
+                    <div class="avatar online">
+                      <div class="w-14 rounded-full">
+                        <img src="./images/Icon.png" />
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2 class="card-title">vvvvvvvvvvvv</h2>
+                    <h6>jjjj</h6>
+                    <small>2022-08-24 17:27:34</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./js/index.js"></script>
   </body>
 </html>
+<!-- <img src="./images//Icon.png" alt=""> -->
