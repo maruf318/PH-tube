@@ -56,7 +56,7 @@ const handleCards = async (id = 1000) => {
     const div = document.createElement("div");
     cardContainer.classList.remove("grid");
     div.innerHTML = `
-    <div class= "w-[400px] h-[200px] mx-auto ">
+    <div class= "w-[400px] lg:mt-16 h-[200px] mx-auto ">
     <img class="mx-auto py-7" src="./images//Icon.png" alt="">
     <h2 class="text-4xl font-bold">Oops!! Sorry, There is no content here</h2>
     </div>
@@ -79,7 +79,7 @@ const handleCards = async (id = 1000) => {
     </figure>
     <div class="card-body   p-1">
       <div class=" flex ">
-        <div class=" flex gap-2">
+        <div class=" flex gap-3 mt-4">
           <div>
             <div class="avatar">
               <div class="w-10 rounded-full">
@@ -88,7 +88,7 @@ const handleCards = async (id = 1000) => {
             </div>
           </div>
           <div class="">
-          <h3 id="posted-date" class="absolute lg:top-36 top-[200px] bg-[#171717] right-2 text-white">${
+          <h3 id="posted-date" class="absolute lg:top-36 top-[200px] bg-[#171717] right-2 text-white text-[12px] rounded">${
             element.others.posted_date
               ? Math.floor(element.others.posted_date / 3600) + "hrs"
               : ""
@@ -98,14 +98,16 @@ const handleCards = async (id = 1000) => {
         : ""
     }</h3>
             <h2 class="text-[16px] font-bold">${element.title}</h2>
-            <h6>${
+            <h6 class="text-[14px] lg:my-3 text-[#111111B3]">${
               element.authors[0].profile_name
             } <span id="verified-id" class="">${
       element.authors[0].verified
         ? '<img class="inline" src="./images/fi_10629607.svg" alt="" />'
         : ""
     }</span></h6>
-            <p>${element.others.views} Views</p>
+            <p class="text-[14px] text-[#111111B3]">${
+              element.others.views
+            } Views</p>
           </div>
         </div>
       </div>
