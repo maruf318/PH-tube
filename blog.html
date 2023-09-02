@@ -10,6 +10,15 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/0f2cb481b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="./images/android-chrome-192x192.png"
+      type="image/x-icon"
+    />
   </head>
   <body class="container mx-auto p-2">
     <h1
@@ -17,46 +26,49 @@
     >
       Question-Answer
     </h1>
-    <div class="my-4 p-2 rounded bg-red-100">
+    <div class="my-4 p-3 rounded-lg bg-red-100">
       <h1 class="text-3xl font-semibold">
         Q1: Discuss the scope of var, let, and const
       </h1>
-      <p>
-        ->Var is a old way to declare variables in javascript whereas let and
-        const were introduced in ES6. let is only accessible within a block
-        where they were declared. var has a hoisting behavior which means we can
-        access var throughout the scope. and using var can lead unexpected
-        errors. var is function-scoped while let and const are block-scoped. Var
-        variables can be reassigned while let and const variables can not. const
-        has the same block level scope similar to let. To conclude, its
-        important and recommended to use let and const over var.
+      <p class="mt-2">
+        <i class="fa-solid fa-pen fa-beat fa-2xs"></i> Var is a old way to
+        declare variables in javascript whereas let and const were introduced in
+        ES6. let is only accessible within a block where they were declared. var
+        has a hoisting behavior which means we can access var throughout the
+        scope. and using var can lead unexpected errors. var is function-scoped
+        while let and const are block-scoped. Var variables can be reassigned
+        while let and const variables can not. const has the same block level
+        scope similar to let. To conclude, its important and recommended to use
+        let and const over var.
       </p>
     </div>
     <hr />
-    <div class="my-4 p-2 rounded bg-red-200">
+    <div class="my-4 p-3 rounded-lg bg-red-200">
       <h1 class="text-3xl font-semibold">
         Q2: Tell us the use cases of null and undefined
       </h1>
-      <p>
-        ->When there is a missing value or if we dont initialize the type then
-        usually we get Undefined. If we intensionally keep an empty value then
-        we can say this to be null. Example of a null can be a object with const
-        friend={name:"sakib", salary:null}. Here we used null to indicate that
-        the object property of salary empty state and has no value. For the same
-        example if we want to find the age of friend object then it will give us
-        undefined. Its better to use null.
+      <p class="mt-2">
+        <i class="fa-solid fa-pen fa-beat fa-2xs"></i> When there is a missing
+        value or if we dont initialize the type then usually we get Undefined.
+        If we intensionally keep an empty value then we can say this to be null.
+        Example of a null can be a object with const friend={name:"sakib",
+        salary:null}. Here we used null to indicate that the object property of
+        salary empty state and has no value. For the same example if we want to
+        find the age of friend object then it will give us undefined. Its better
+        to use null.
       </p>
     </div>
     <hr />
-    <div class="bg-red-300 my-4 p-2 rounded">
+    <div class="bg-red-300 my-4 p-3 rounded-lg">
       <h1 class="text-3xl font-semibold">Q3: What do you mean by REST API?</h1>
-      <p>
-        ->A REST API (Representation state Transfer API) is a programming
-        interface that uses HTTP requests to access data using PUT, GET , POST
-        and DELETE method. Basically My web page communicates with a cloud-based
-        server via a rest API. They are all about communication means from
-        client side to server or vice versa. The Equivalent of Create in an HTTP
-        method is Post, Read is Get, Update is Put and Delete is Delete.
+      <p class="mt-2">
+        <i class="fa-solid fa-pen fa-beat fa-2xs"></i> A REST API
+        (Representation state Transfer API) is a programming interface that uses
+        HTTP requests to access data using PUT, GET , POST and DELETE method.
+        Basically My web page communicates with a cloud-based server via a rest
+        API. They are all about communication means from client side to server
+        or vice versa. The Equivalent of Create in an HTTP method is Post, Read
+        is Get, Update is Put and Delete is Delete.
       </p>
     </div>
   </body>
